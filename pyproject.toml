@@ -9,6 +9,16 @@ readme = "README.md"
 python = "^3.10"
 
 
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+pyspark = "^3.5.3"
+chispa = "^0.10.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "nexus"
+url = "https://p-nexus-3.development.nl.eu.abnamro.com:8443/repository/python-group/simple/"
+priority = "default"
