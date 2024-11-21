@@ -11,7 +11,6 @@ python = "^3.10"
 [tool.ruff]
 line-length = 120
 fix = true
-select = ["I001", "I002"] #isort rules
 
 [tool.ruff.lint.flake8-type-checking]
 strict = true
