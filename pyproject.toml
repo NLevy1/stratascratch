@@ -8,6 +8,13 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 
+[tool.ruff]
+line-length = 120
+fix = true
+select = ["I001", "I002"] #isort rules
+
+[tool.ruff.lint.flake8-type-checking]
+strict = true
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.3"
@@ -21,4 +28,4 @@ build-backend = "poetry.core.masonry.api"
 [[tool.poetry.source]]
 name = "nexus"
 url = "https://p-nexus-3.development.nl.eu.abnamro.com:8443/repository/python-group/simple/"
-priority = "default"
+priority = "primary"
